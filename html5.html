@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Diseño web HTML5 y CSS3</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="cabecera">
+        <a><img src="Logo_unad.png"/></a>
+    </div>
+	<div class="topnav" id="myTopnav">
+	<a href="Inicio.html">Inicio</a>
+	<div class="subnav">
+		<button class="subnavbtn">Conceptos<i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+			<a href="HTML5.html">HTML5</a>
+			<a href="CSS3.html">CSS3</a>
+		</div>
+	</div> 
+	
+	<div class="subnav">
+		<button class="subnavbtn">Recursos<i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+			<a href="videos.html">Videos</a>
+			<a href="audios.html">Audios</a>
+		</div>
+	</div> 
+	
+	<div class="subnav">
+		<button class="subnavbtn">Autoevaluacion<i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+			<a href="#Submenu1">Submenu1</a>
+			<a href="#Submenu2">Submenu2</a>
+		</div>
+	</div>
+	
+	<a href="Acerca.html">Acerca de</a>
+
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
+	</a>
+	</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+    <div class="cuerpo">
+        <div class="contenido">
+            <h1>CONCEPTOS</h1>
+            <h2>HTML5</h2>
+            <p>HTML5 (HyperText Markup Language, versión 5) es la quinta revisión del lenguaje HTML. Esta nueva versión (aún en desarrollo), y en conjunto con CSS3, define los nuevos estándares de desarrollo web, rediseñando el código para resolver problemas y actualizándolo así a nuevas necesidades. No se limita solo a crear nuevas etiquetas o atributos, sino que incorpora muchas características nuevas y proporciona una plataforma de desarrollo de complejas aplicaciones web (mediante los APIs).</p>
+			
+			<p>HTML5 está destinado a sustituir no sólo HTML 4, sino también XHTML 1 y DOM Nivel 2. Esta versión nos permite una mayor interacción entre nuestras páginas web y el contenido media (video, audio, entre otros) así como una mayor facilidad a la hora de codificar nuestro diseño básico.</p>
+			<br><img src="html5.jpg">
+			<p><h5>Fuente: Imagen recuperada de: https://programacion.net/files/article/article_02174_.jpg</h5></p>
+        </div>
+        <div class="barra-lateral">
+		<h2>Twitter</h2>
+			<a class="twitter-timeline" data-lang="es" data-width="300" data-height="600" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw"></a> 
+			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div>
+
+            </div>
+        </div>
+    </div>
+    <div class="pie">
+        <p>Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional
+		SNIES 2102 - © Copyright UNAD 2020 </p>
+    </div>
+</body>
+</html>

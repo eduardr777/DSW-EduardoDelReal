@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Diseño web HTML5 y CSS3</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="cabecera">
+        <a><img src="Logo_unad.png"/></a>
+    </div>
+	<div class="topnav" id="myTopnav">
+	<a href="Inicio.html">Inicio</a>
+	<div class="subnav">
+		<button class="subnavbtn">Conceptos<i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+			<a href="HTML5.html">HTML5</a>
+			<a href="CSS3.html">CSS3</a>
+		</div>
+	</div> 
+	
+	<div class="subnav">
+		<button class="subnavbtn">Recursos<i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+			<a href="videos.html">Videos</a>
+			<a href="audios.html">Audios</a>
+		</div>
+	</div> 
+	
+	<div class="subnav">
+		<button class="subnavbtn">Autoevaluacion<i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+			<a href="#Submenu1">Submenu1</a>
+			<a href="#Submenu2">Submenu2</a>
+		</div>
+	</div>
+	
+	<a href="Acerca.html">Acerca de</a>
+
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
+	</a>
+	</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+    <div class="cuerpo">
+        <div class="contenido">
+            <h1>CONCEPTOS</h1>
+            <h2>CSS3</h2>
+            <p>CSS es un lenguaje usado para definir la presentación de un documento estructurado escrito en HTML o XML (y por extensión en XHTML). El W3C(World Wide Web Consortium) es el encargado de formular la especificación de las hojas de estilo que servirán de estándar para los agentes de usuario o navegadores</p>
+			
+			<p>La idea que se encuentra detrás del desarrollo de CSS es separar la estructura de un documento de su presentación.</p>
+			<P>La información de estilo puede ser adjuntada como un documento separado o en el mismo documento HTML. En este último caso podrían definirse estilos generales en la cabecera del documento o en cada etiqueta particular mediante el atributo style.</P>
+			<br><img src="css3.png">
+			<p><h5>Fuente: Imagen recuperada de: https://www.tutorialrepublic.com/lib/images/css-illustration.png</h5></p>
+        </div>
+        <div class="barra-lateral">
+		<h2>Twitter</h2>
+			<a class="twitter-timeline" data-lang="es" data-width="300" data-height="600" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw"></a> 
+			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div>
+
+            </div>
+        </div>
+    </div>
+    <div class="pie">
+        <p>Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional
+		SNIES 2102 - © Copyright UNAD 2020 </p>
+    </div>
+</body>
+</html>
