@@ -194,7 +194,37 @@ div.contenido img {
     top: 0;
     width: 100%;
     }
-
+	
+.game1-responsive {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+    }
+.game1-responsive iframe, .game1-responsive object, .game1-responsive embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    }
+	
+.game2-responsive {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+    }
+.game2-responsive iframe, .game2-responsive object, .game2-responsive embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    }
+	
 @media (max-width: 640px) {
     .barra-lateral {
         display: none;
